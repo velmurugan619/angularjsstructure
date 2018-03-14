@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Angular Structure</title>
+    </head>
+    <body ng-app="myApp">
+        <div>
+            <header-directive></header-directive>
+            <ul>
+                <a ui-sref="home"><li >Home</li></a>
+                <a ui-sref="about"><li>About</li></a>
+            </ul>
+        </div>
+        <div ui-view></div>
+        <footer-directive></footer-directive>
+    </body>
+    <script src="./lib/angular.min.js"></script>
+    <script src="./lib/angular-route.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./route.js"></script>
+    <script src="./common/header/headerDirective.js"></script>
+    <script src="./common/footer/footerDirective.js"></script>
+    <script src="./home/homeService.js"></script>
+    <script src="/login/loginService.js"></script>
+    <script src="./home/homeController.js"></script>
+    <script src="./about/aboutController.js"></script>
+    <script src="./login/loginController.js"></script>
+    
+</html>
